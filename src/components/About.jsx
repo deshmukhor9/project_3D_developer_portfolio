@@ -49,7 +49,7 @@ const About = () => {
       return () => mediaQuery.removeEventListener("change", handleMediaQueryChange);
     }, []);
     const handleViewResume = () => {
-      window.open("https://omkar-portfolio-9d8lhzysw-omkar-deshmukhs-projects-f3c915e3.vercel.app/Omkar_Deshmukh_Resume.pdf", "_blank");
+      window.open("https://drive.google.com/file/d/1h7JXmbfiaWSKQ6xobj7IYeKxN-8mXw-6/view?usp=sharing", "_blank");
     };
     
   return (
