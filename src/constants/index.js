@@ -19,10 +19,19 @@ import {
   starbucks,
   tesla,
   shopify,
+  kulturehire,
+  stellar,
   carrent,
   jobit,
   tripguide,
   threejs,
+  reactnative,
+  firebase,
+  mysql,
+  nextjs,
+  cipherchat,
+  aishort,
+  rentex,
 } from "../assets";
 
 export const navLinks = [
@@ -50,11 +59,11 @@ const services = [
     icon: mobile,
   },
   {
-    title: "Backend Developer",
+    title: "Full-Stack Developer",
     icon: backend,
   },
   {
-    title: "Content Creator",
+    title: "Firebase Expert",
     icon: creator,
   },
 ];
@@ -81,8 +90,8 @@ const technologies = [
     icon: reactjs,
   },
   {
-    name: "Redux Toolkit",
-    icon: redux,
+    name: "Next JS",
+    icon: nextjs,
   },
   {
     name: "Tailwind CSS",
@@ -93,78 +102,67 @@ const technologies = [
     icon: nodejs,
   },
   {
-    name: "MongoDB",
-    icon: mongodb,
+    name: "MySQL",
+    icon: mysql,
   },
+
   {
-    name: "Three JS",
-    icon: threejs,
-  },
-  {
-    name: "git",
+    name: "Git",
     icon: git,
   },
   {
-    name: "figma",
+    name: "Figma",
     icon: figma,
   },
   {
-    name: "docker",
-    icon: docker,
+    name: "Firebase",
+    icon: firebase,
   },
 ];
 
 const experiences = [
   {
-    title: "React.js Developer",
-    company_name: "Starbucks",
-    icon: starbucks,
-    iconBg: "#383E56",
-    date: "March 2020 - April 2021",
+    title: "Web & App Developer",
+    company_name: "Client Business",
+    icon: stellar,
+    iconBg: "white",
+    date: "Aug 2024 - Dec 2024",
     points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
+      "Designed and implemented the frontend of a customer website using React and Tailwind CSS.",
+      "Built and maintained admin and customer-facing web applications using React and Firebase.",
+      "Tested and debugged web applications, leading to a 15% increase in website responsiveness. ",
     ],
   },
   {
-    title: "React Native Developer",
-    company_name: "Tesla",
-    icon: tesla,
-    iconBg: "#E6DEDD",
-    date: "Jan 2021 - Feb 2022",
+    title: "Data Analyst Intern",
+    company_name: "Kulturehire",
+    icon: kulturehire,
+    iconBg: "white",
+    date: "Aug 2024 - Sep 2024",
     points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
+      "Conducted data cleaning, analysis, and visualization using SQL and EXCEL to deliver actionable insights.",
     ],
   },
   {
-    title: "Web Developer",
-    company_name: "Shopify",
-    icon: shopify,
-    iconBg: "#383E56",
-    date: "Jan 2022 - Jan 2023",
+    title: "Business Analyst Intern",
+    company_name: "Kulturehire",
+    icon: kulturehire,
+    iconBg: "white",
+    date: "Oct 2024 - Nov 2024",
     points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
+      "Collaborated with teams to optimize processes and prepared reports to support strategic planning.",
     ],
   },
   {
-    title: "Full stack Developer",
-    company_name: "Meta",
-    icon: meta,
-    iconBg: "#E6DEDD",
-    date: "Jan 2023 - Present",
+    title: "Data Science Intern",
+    company_name: "Stellar MoldTech",
+    icon: stellar,
+    iconBg: "white",
+    date: "Jan 2025 - Present",
     points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
+      "Conducting exploratory data analysis (EDA) and deriving business insights from company data.",
+      "Developing machine learning models to optimize business processes. Working with Python, SQL, and Power BI for data visualization and reporting.",
+      "Throughout this internship, I am working with technologies like Google Firebase, BigQuery, Google Looker Studio, Google Sheets, and Python (Colab) to develop a data-driven solution for the company.",
     ],
   },
 ];
@@ -198,67 +196,73 @@ const testimonials = [
 
 const projects = [
   {
-    name: "Car Rent",
+    name: "Cipher Chat",
     description:
-      "Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.",
+      "Developed a secure, encrypted chat application using React Native, Firebase,and Expo. Implemented end-to-end encryption for private and secure messaging. Focused on a clean UI and real-time messaging to enhance user experience.",
     tags: [
       {
-        name: "react",
+        name: "react-native",
         color: "blue-text-gradient",
       },
       {
-        name: "mongodb",
+        name: "firebase",
         color: "green-text-gradient",
       },
       {
-        name: "tailwind",
+        name: "expo",
         color: "pink-text-gradient",
       },
     ],
-    image: carrent,
-    source_code_link: "https://github.com/",
+    image: cipherchat,
+    source_code_link: "https://www.linkedin.com/posts/omkar-deshmukh-67911223a_reactnative-firebase-appdevelopment-activity-7301315414041473024-8hq8?utm_source=share&utm_medium=member_desktop&rcm=ACoAADt2Dj0BA4mJJurDKojEmAHa7Ngp2_lBLhY",
   },
   {
-    name: "Job IT",
+    name: "RentEx",
     description:
-      "Web application that enables users to search for job openings, view estimated salary ranges for positions, and locate available jobs based on their current location.",
+      "Built a custom tenant management app to automate rent and bill tracking for my family. Solved the problem of complex Play Store apps by designing a simple & intuitive UI. Features include tenant account creation, automatic bill calculation, meter reading with images, and real-time tracking.",
     tags: [
       {
-        name: "react",
+        name: "react-native",
         color: "blue-text-gradient",
       },
       {
-        name: "restapi",
+        name: "firebase",
         color: "green-text-gradient",
       },
       {
-        name: "scss",
+        name: "expo",
         color: "pink-text-gradient",
       },
+
+
     ],
-    image: jobit,
-    source_code_link: "https://github.com/",
+    image: rentex,
+    source_code_link: "https://www.linkedin.com/posts/omkar-deshmukh-67911223a_reactnative-firebase-appdevelopment-activity-7301760664128143362-iZqQ?utm_source=share&utm_medium=member_desktop&rcm=ACoAADt2Dj0BA4mJJurDKojEmAHa7Ngp2_lBLhY",
   },
   {
-    name: "Trip Guide",
+    name: "Ai-Short-Video Generator",
     description:
-      "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
+      "Built an AI-driven tool to automate short video creation from script to final output. Integrated Google AI Studio for script generation, ElevenLabs for TTS, Microsoft Designer (Python) for AI images, and AssemblyAI for captions. Used Remotion to compile assets into a video",
     tags: [
       {
         name: "nextjs",
         color: "blue-text-gradient",
       },
       {
-        name: "supabase",
+        name: "firebase",
         color: "green-text-gradient",
       },
       {
-        name: "css",
+        name: "tailwindcss",
         color: "pink-text-gradient",
       },
+            {
+        name: "ai",
+        color: "blue-text-gradient",
+      },
     ],
-    image: tripguide,
-    source_code_link: "https://github.com/",
+    image: aishort,
+    source_code_link: "https://www.linkedin.com/posts/omkar-deshmukh-67911223a_ai-beginnerproject-youtubeshorts-activity-7307081831386947584-LT6f?utm_source=share&utm_medium=member_desktop&rcm=ACoAADt2Dj0BA4mJJurDKojEmAHa7Ngp2_lBLhY",
   },
 ];
 
