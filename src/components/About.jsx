@@ -53,7 +53,7 @@ const About = () => {
     {/* Introduction Section */}
     <motion.div 
   variants={textVariant()} 
-  className="flex flex-col md:flex-row md:items-end md:gap-10 mt-[-170px] md:mt-[-240px]"
+  className="flex flex-col md:flex-row md:items-end md:gap-10 mt-[-250px] md:mt-[-240px]"
 >
   <div>
     <p className={styles.sectionSubText}>Introduction</p>
