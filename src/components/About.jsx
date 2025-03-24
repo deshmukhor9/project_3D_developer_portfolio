@@ -12,8 +12,9 @@ const ServiceCard = ({ index, title, icon }) => (
   
   <Tilt className='xs:w-[250px] w-full' tiltMaxAngleX={45} tiltMaxAngleY={45}>
     <motion.div
-      variants={fadeIn("right", "spring", index * 0.5, 0.75)}
-      className='w-full green-pink-gradient p-[1px] rounded-[20px] shadow-card'
+      variants={fadeIn("right", "spring", index * 0.5, 0.75) }
+      
+      className='w-full green-pink-gradient p-[1px] rounded-[20px] shadow-card '
     >
       <div
         options={{
@@ -50,13 +51,15 @@ const About = () => {
   
       return () => mediaQuery.removeEventListener("change", handleMediaQueryChange);
     }, []);
-    const handleViewResume = () => {
-      window.open("https://drive.google.com/file/d/1h7JXmbfiaWSKQ6xobj7IYeKxN-8mXw-6/view?usp=sharing", "_blank");
-    };
+    // const handleViewResume = () => {
+    //   window.open("https://drive.google.com/file/d/1h7JXmbfiaWSKQ6xobj7IYeKxN-8mXw-6/view?usp=sharing", "_blank");
+    // };
     return(
     <>
     {/* Introduction Section */}
-    <motion.div variants={textVariant()} className="flex flex-col md:flex-row md:items-end md:gap-10">
+    <motion.div variants={textVariant()} 
+    
+    className="flex flex-col md:flex-row md:items-end md:gap-10">
       <div>
         <p className={styles.sectionSubText}>Introduction</p>
         <h2 className={styles.sectionHeadText}>Overview.</h2>
@@ -65,7 +68,7 @@ const About = () => {
       {/* View Resume Button - Positioned in Front */}
       <button 
         onClick={() => navigate("/resume")} 
-        className="bg-[#915eff] text-white text-xl px-8 py-4 rounded-lg shadow-md 
+        className="bg-[#915eff] text-white text-xl px-8 py-3 rounded-lg shadow-md 
                    hover:bg-[#09dbf8] hover:text-black transition-all 
                    md:mb-4 md:ml-10 md:mt-0 md:w-auto"
       >

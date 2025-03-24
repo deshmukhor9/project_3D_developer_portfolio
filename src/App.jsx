@@ -25,7 +25,13 @@ const App = () => {
         } />
 
         {/* Resume Page */}
-        <Route path="/resume" element={<Resume />} />
+        <Route path="/resume" element={
+          <div className='relative z-0 bg-primary'>
+            <div className='bg-hero-pattern bg-cover bg-no-repeat bg-center'>
+          <Resume />
+          </div>
+          </div>
+          } />
       </Routes>
     </BrowserRouter>
   );

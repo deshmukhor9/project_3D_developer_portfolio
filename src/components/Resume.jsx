@@ -2,7 +2,7 @@ import React from "react";
 
 const Resume = () => {
   return (
-    <div className="flex justify-center items-center h-screen bg-gray-900 pt-10">
+    <div className="flex justify-center items-center h-screen  pt-10">
       <iframe
         src="https://drive.google.com/file/d/1h7JXmbfiaWSKQ6xobj7IYeKxN-8mXw-6/preview"
         width="80%"
