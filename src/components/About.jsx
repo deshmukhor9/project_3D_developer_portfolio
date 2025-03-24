@@ -53,7 +53,7 @@ const About = () => {
     {/* Introduction Section */}
     <motion.div 
   variants={textVariant()} 
-  className="flex flex-col md:flex-row md:items-end md:gap-10 mt-[-120px] md:mt-[-240px]"
+  className="flex flex-col md:flex-row md:items-end md:gap-10 mt-[-170px] md:mt-[-240px]"
 >
   <div>
     <p className={styles.sectionSubText}>Introduction</p>
@@ -77,7 +77,7 @@ const About = () => {
 <motion.p
   variants={fadeIn("", "", 0.1, 1)}
   className="text-base sm:text-lg md:text-xl lg:text-2xl leading-relaxed text-gray-300 mt-4
-             opacity-0 animate-fadeIn w-full md:w-[80%] text-justify"
+             opacity-0 animate-fadeIn w-full md:w-[80%] md:text-justify"
 >
 <br/>
   👋 <span className="font-semibold text-gray-200">Hi there! </span>  
