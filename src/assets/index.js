@@ -25,6 +25,8 @@ import firebase from "./tech/firebase.png";
 import reactnative from "./tech/reactnative.png";
 import mysql from "./tech/mysql.png";
 import nextjs from "./tech/nextjs.png";
+import python from "./tech/python.png";
+import powerbi from "./tech/powerbi.png";
 
 import meta from "./company/meta.png";
 import shopify from "./company/shopify.png";
@@ -68,6 +70,7 @@ export {
   mysql,
   reactnative,
   nextjs,
+  python,powerbi,
   meta,
   shopify,
   starbucks,

@@ -9,34 +9,28 @@ import { SectionWrapper } from "../hoc";
 import { fadeIn, textVariant } from "../utils/motion";
 
 const ServiceCard = ({ index, title, icon }) => (
-  
-  <Tilt className='xs:w-[250px] w-full' tiltMaxAngleX={45} tiltMaxAngleY={45}>
+  <Tilt className='w-[200px] xs:w-[250px] w-full' tiltMaxAngleX={45} tiltMaxAngleY={45}>
     <motion.div
-      variants={fadeIn("right", "spring", index * 0.5, 0.75) }
-      
-      className='w-full green-pink-gradient p-[1px] rounded-[20px] shadow-card '
+      variants={fadeIn("right", "spring", index * 0.5, 0.75)}
+      className='w-full green-pink-gradient p-[1px] rounded-[20px] shadow-card'
     >
       <div
-        options={{
-          max: 45,
-          scale: 1,
-          speed: 450,
-        }}
-        className='bg-tertiary rounded-[20px] py-5 px-12 min-h-[280px] flex justify-evenly items-center flex-col'
+        className='bg-tertiary rounded-[20px] py-4 px-8 min-h-[180px]  xs:py-5 xs:px-12 xs:min-h-[280px] flex justify-evenly items-center flex-col'
       >
         <img
           src={icon}
           alt='web-development'
-          className='w-16 h-16 object-contain'
+          className='w-14 h-14 xs:w-16 xs:h-16 object-contain'
         />
 
-        <h3 className='text-white text-[20px] font-bold text-center'>
+        <h3 className='text-white text-[18px] xs:text-[20px] font-bold text-center'>
           {title}
         </h3>
       </div>
     </motion.div>
   </Tilt>
 );
+
 
 const About = () => {
     const [isMobile, setIsMobile] = useState(false);
@@ -59,7 +53,7 @@ const About = () => {
     {/* Introduction Section */}
     <motion.div variants={textVariant()} 
     
-    className="flex flex-col md:flex-row md:items-end md:gap-10 ">
+    className="flex flex-col md:flex-row md:items-end md:gap-10 mt-[-80px]">
       <div>
         <p className={styles.sectionSubText}>Introduction</p>
         <h2 className={styles.sectionHeadText}>Overview.</h2>

@@ -29,6 +29,8 @@ import {
   firebase,
   mysql,
   nextjs,
+  powerbi,
+  python,
   cipherchat,
   aishort,
   rentex,
@@ -117,6 +119,14 @@ const technologies = [
   {
     name: "Firebase",
     icon: firebase,
+  },
+  {
+    name: "Power BI",
+    icon: powerbi,
+  },
+  {
+    name: "Python",
+    icon: python,
   },
 ];
 

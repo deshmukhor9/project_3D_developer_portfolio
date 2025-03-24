@@ -7,13 +7,13 @@ const Computers = ({ isMobile }) => {
   if (isMobile) {
     return (
       <div style={{           position: "absolute",
-        top: "75%",  // Center vertically
+        top: "70%",  // Center vertically
         left: "55%", // Center horizontally
         transform: "translate(-50%, -50%)", // Adjusts to exact center
         width: "100%", // Adjust as needed
         height: "30%",
         textAlign: "center",
-        marginBottom: "-50px", }}> {/* Moves the image lower */}
+        marginBottom: "0px", }}> {/* Moves the image lower */}
         <img
           src="/computer.png" // Replace with your image path
           alt="Desktop Model"

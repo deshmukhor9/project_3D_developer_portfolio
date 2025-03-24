@@ -1,18 +1,13 @@
 import React, { Suspense, useEffect, useState } from "react";
 import { Canvas } from "@react-three/fiber";
 import { Decal, Float, OrbitControls, Preload, useTexture } from "@react-three/drei";
-
 import CanvasLoader from "../Loader";
 
-const Ball = ({ imgUrl, isMobile }) => {
+const Ball = ({ imgUrl }) => {
   const [decal] = useTexture([imgUrl]);
 
   return (
-    <Float 
-      speed={isMobile ? 0 : 1.5} // Disable floating on mobile
-      rotationIntensity={isMobile ? 0 : 1} // Disable rotation on mobile
-      floatIntensity={isMobile ? 0 : 2} // Disable floating movement on mobile
-    >
+    <Float speed={1.5} rotationIntensity={1} floatIntensity={2}>
       <ambientLight intensity={0.3} />
       <directionalLight position={[0, 0, 2]} />
       <mesh castShadow receiveShadow scale={2.2}>
@@ -39,27 +34,29 @@ const BallCanvas = ({ icon }) => {
   const [isMobile, setIsMobile] = useState(false);
 
   useEffect(() => {
-    const handleResize = () => {
-      setIsMobile(window.innerWidth < 768);
-    };
-
-    handleResize(); // Check on mount
+    const handleResize = () => setIsMobile(window.innerWidth < 768);
+    handleResize(); 
     window.addEventListener("resize", handleResize);
     return () => window.removeEventListener("resize", handleResize);
   }, []);
 
-  return (
-    <Canvas 
-      frameloop="demand" 
-      dpr={[1, 2]} 
-      gl={{ preserveDrawingBuffer: true }} 
-      style={{ touchAction: "auto" }} // Allow normal touch scrolling
-    >
-      <Suspense fallback={<CanvasLoader />}>
-        {!isMobile && <OrbitControls enableZoom={false} enableRotate enablePan />}
-        <Ball imgUrl={icon} isMobile={isMobile} />
-      </Suspense>
+  if (isMobile) {
+    return (
+      <div
+        className="w-20 h-20 flex justify-center items-center rounded-full shadow-lg bg-white ml-6 "
 
+      >
+        <img src={icon} alt="icon" className="w-12 h-12 object-contain" />
+      </div>
+    );
+  }
+
+  return (
+    <Canvas frameloop="demand" dpr={[1, 2]} gl={{ preserveDrawingBuffer: true }}>
+      <Suspense fallback={<CanvasLoader />}>
+        <OrbitControls enableZoom={false} enableRotate enablePan />
+        <Ball imgUrl={icon} />
+      </Suspense>
       <Preload all />
     </Canvas>
   );
