@@ -13,7 +13,7 @@ const Computers = ({ isMobile }) => {
         width: "100%", // Adjust as needed
         height: "30%",
         textAlign: "center",
-        marginBottom: "0px", }}> {/* Moves the image lower */}
+        marginBottom: "-50px", }}> {/* Moves the image lower */}
         <img
           src="/computer.png" // Replace with your image path
           alt="Desktop Model"

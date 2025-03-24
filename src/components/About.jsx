@@ -59,7 +59,7 @@ const About = () => {
     {/* Introduction Section */}
     <motion.div variants={textVariant()} 
     
-    className="flex flex-col md:flex-row md:items-end md:gap-10">
+    className="flex flex-col md:flex-row md:items-end md:gap-10 ">
       <div>
         <p className={styles.sectionSubText}>Introduction</p>
         <h2 className={styles.sectionHeadText}>Overview.</h2>
@@ -89,7 +89,7 @@ const About = () => {
     </motion.p>
   
     {/* Services Section */}
-    <div className='mt-20 flex flex-wrap gap-10'>
+    <div className='mt-10 flex flex-wrap gap-10'>
       {services.map((service, index) => (
         <ServiceCard key={service.title} index={index} {...service} />
       ))}

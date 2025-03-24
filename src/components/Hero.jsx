@@ -31,9 +31,10 @@ const Hero = () => {
   {/* Profile Image */}
 
       </div>
+      <div className="relative w-full h-screen flex flex-col items-center justify-center">
       <ComputersCanvas />
       <PhotoCanvas/>
-
+      </div>
 
     </section>
   );

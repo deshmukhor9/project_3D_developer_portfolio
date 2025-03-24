@@ -2,7 +2,9 @@ import React, { useEffect, useState } from "react";
 import { Link, useLocation } from "react-router-dom"; // Import useLocation
 import { styles } from "../styles";
 import { navLinks } from "../constants";
-import { logo, menu, close } from "../assets";
+import { menu, close } from "../assets";
+// import { logo} from "/logo";
+
 
 const Navbar = () => {
   const [active, setActive] = useState("");
@@ -34,7 +36,7 @@ const Navbar = () => {
             window.scrollTo(0, 0);
           }}
         >
-          <img src={logo} alt="logo" className="w-10 h-10 object-contain" />
+          <img src="/logo.png" alt="logo" className="w-10 h-10 object-contain" />
           <p className="text-white text-[24px] font-bold cursor-pointer flex ">
             Omkar &nbsp; Deshmukh
           </p>

@@ -1,4 +1,4 @@
-import logo from "./logo.png";
+
 import backend from "./backend.png";
 import creator from "./creator.png";
 import mobile from "./mobile.png";
@@ -42,7 +42,7 @@ import aishort from "./aishort.png";
 
 
 export {
-  logo,
+
   backend,
   creator,
   mobile,
