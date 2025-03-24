@@ -16,7 +16,7 @@ const PhotoCanvas = () => {
   return (
     <div
       className={`absolute z-10 ${
-        isMobile ? "top-28 left-1 w-14 h-14" : "top-20 right-80 w-52 h-52"
+        isMobile ? "top-28 left-1 w-14 h-14" : "top-20 right-48 w-52 h-52"
       }`}
     >
       {/* Profile Image */}
