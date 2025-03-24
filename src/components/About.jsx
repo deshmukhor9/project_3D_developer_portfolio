@@ -51,37 +51,61 @@ const About = () => {
     return(
     <>
     {/* Introduction Section */}
-    <motion.div variants={textVariant()} 
-    
-    className="flex flex-col md:flex-row md:items-end md:gap-10 mt-[-80px]">
-      <div>
-        <p className={styles.sectionSubText}>Introduction</p>
-        <h2 className={styles.sectionHeadText}>Overview.</h2>
-      </div>
+    <motion.div 
+  variants={textVariant()} 
+  className="flex flex-col md:flex-row md:items-end md:gap-10 mt-[-120px] md:mt-[-240px]"
+>
+  <div>
+    <p className={styles.sectionSubText}>Introduction</p>
+    <h2 className={styles.sectionHeadText}>Overview.</h2>
+  </div>
+
+  {/* View Resume Button - Positioned in Front */}
+  <button 
+    onClick={() => navigate("/resume")} 
+    className="bg-[#915eff] text-white text-xl px-8 py-3 rounded-lg shadow-md 
+               hover:bg-[#09dbf8] hover:text-black transition-all 
+               mt-4 md:mt-0 md:mb-4 md:ml-10 md:w-auto"
+  >
+    View Resume
+  </button>
+</motion.div>
+
   
-      {/* View Resume Button - Positioned in Front */}
-      <button 
-        onClick={() => navigate("/resume")} 
-        className="bg-[#915eff] text-white text-xl px-8 py-3 rounded-lg shadow-md 
-                   hover:bg-[#09dbf8] hover:text-black transition-all 
-                   md:mb-4 md:ml-10 md:mt-0 md:w-auto"
-      >
-        View Resume
-      </button>
-    </motion.div>
-  
-    {/* Paragraph Content */}
-    <motion.p
-      variants={fadeIn("", "", 0.1, 1)}
-      className={styles.sectionDetailText}
-    >
-      I'm Omkar Deshmukh, a passionate Web and App Developer dedicated to building scalable, user-friendly digital experiences. <br/>
-      With expertise in React.js, Next.js, React Native, and Firebase, I specialize in crafting responsive websites and cross-platform mobile applications. <br/>
-      I enjoy solving real-world problems through code and have experience developing full-stack applications, chat apps, and data-driven dashboards. <br/>
-      Always eager to learn and adapt, I strive to create seamless, interactive, and efficient solutions.<br/>
-      Let’s build something amazing together!
-    </motion.p>
-  
+{/* Paragraph Content */}
+{/* Paragraph Content */}
+<motion.p
+  variants={fadeIn("", "", 0.1, 1)}
+  className="text-base sm:text-lg md:text-xl lg:text-2xl leading-relaxed text-gray-300 mt-4
+             opacity-0 animate-fadeIn w-full md:w-[80%] text-justify"
+>
+<br/>
+  👋 <span className="font-semibold text-gray-200">Hi there! </span>  
+  I'm <span className="font-bold text-gray-300">Omkar Deshmukh</span>, a final-year Computer Science Engineering student from Maharashtra, India. Passionate about  
+  <span className="text-blue-400"> Full-Stack Development</span>,  
+  <span className="text-yellow-400"> AI</span>, and  
+  <span className="text-green-400"> Data Science</span>, I love building innovative applications that solve real-world problems. 🚀
+
+  <br /><br />
+  🎓 <span className="font-semibold text-gray-200">Education: </span>  
+  <span className="text-gray-400">Bachelor’s Degree in Computer Science & Engineering (Ongoing)</span>  
+  📍 Maharashtra Institute of Technology, Aurangabad  
+  📊 <span className="font-medium text-gray-300">CGPA:</span> 8.59 | 🎓 Graduating: <span className="font-medium text-gray-300">June 2025</span>
+
+  <br /><br />
+  🚀 <span className="font-semibold text-gray-200">What I'm Currently Learning: </span>  
+  Integrating <span className="text-blue-400">Full-Stack Development</span> with  
+  <span className="text-yellow-400"> AI</span> to build intelligent applications.
+
+  <br /><br />
+  ⚡ <span className="font-semibold text-gray-200">Fun Fact: </span>  
+  I love working on  
+  <span className="text-pink-400"> trading strategies</span>,  
+  <span className="text-purple-400"> AI-powered chat applications</span>, and  
+  <span className="text-green-400"> tech-driven solutions</span> that make life easier! 🚀
+</motion.p>
+
+
     {/* Services Section */}
     <div className='mt-10 flex flex-wrap gap-10'>
       {services.map((service, index) => (

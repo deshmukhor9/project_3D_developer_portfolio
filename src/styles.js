@@ -13,7 +13,7 @@ const styles = {
   sectionSubText:
     "sm:text-[26px] text-[16px] text-secondary uppercase tracking-wider",
   sectionDetailText:
-    "sm:text-[20px] text-[18px] text-secondary max-w-3xl leading-[30px] mt-2 ",
+    "sm:text-[20px] text-[18px] text-secondary max-w-3xl leading-[30px] mt-2 text-justify",
 };
 
 // className='mt-2 text-secondary text-[20px] max-w-3xl leading-[30px]'
