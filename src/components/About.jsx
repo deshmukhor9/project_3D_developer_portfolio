@@ -88,9 +88,9 @@ const About = () => {
 
   <br /><br />
   🎓 <span className="font-semibold text-gray-200">Education: </span>  
-  <span className="text-gray-400">Bachelor’s Degree in Computer Science & Engineering (Ongoing)</span>  
+  <span className="text-gray-300">Bachelor’s Degree in Computer Science & Engineering (Ongoing)</span>  
   📍 Maharashtra Institute of Technology, Aurangabad  
-  📊 <span className="font-medium text-gray-300">CGPA:</span> 8.59 | 🎓 Graduating: <span className="font-medium text-gray-300">June 2025</span>
+  📊 <span className="font-medium text-gray-300">CGPA:</span> 8.6 | 🎓 Graduating: <span className="font-medium text-gray-300">June 2025</span>
 
   <br /><br />
   🚀 <span className="font-semibold text-gray-200">What I'm Currently Learning: </span>  

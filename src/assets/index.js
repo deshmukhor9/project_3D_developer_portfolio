@@ -41,6 +41,7 @@ import tripguide from "./tripguide.png";
 import cipherchat from "./cipherchat.png";
 import rentex from "./rentex.png";
 import aishort from "./aishort.png";
+import edutrack from "./edu-track.png";
 
 
 export {
@@ -82,5 +83,6 @@ export {
   tripguide,
   cipherchat,
   rentex,
-  aishort
+  aishort,
+  edutrack
 };

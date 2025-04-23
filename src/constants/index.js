@@ -34,6 +34,7 @@ import {
   cipherchat,
   aishort,
   rentex,
+  edutrack,
 } from "../assets";
 
 export const navLinks = [
@@ -273,6 +274,27 @@ const projects = [
     ],
     image: aishort,
     source_code_link: "https://www.linkedin.com/posts/omkar-deshmukh-67911223a_ai-beginnerproject-youtubeshorts-activity-7307081831386947584-LT6f?utm_source=share&utm_medium=member_desktop&rcm=ACoAADt2Dj0BA4mJJurDKojEmAHa7Ngp2_lBLhY",
+  },
+  {
+    name: "EduTrack — Your Offline Learning Companion!",
+    description:
+      "Built a tool for learners who download Udemy courses from torrent but miss structured tracking. Enabled folder import, interactive video listing, and real-time progress tracking. Integrated React Player for media, dynamic folder parsing, and local state storage. Mimicked Udemy UI/UX to keep users engaged and reduce learning fatigue. http://edu-track-v1.vercel.app",
+    tags: [
+      {
+        name: "reactjs",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "html/css",
+        color: "green-text-gradient",
+      },
+      {
+        name: "vercel",
+        color: "pink-text-gradient",
+      },
+    ],
+    image: edutrack,
+    source_code_link: "https://www.linkedin.com/posts/omkar-deshmukh-67911223a_reactjs-webdevelopment-edtech-activity-7319609393027629056-ufQ3?utm_source=share&utm_medium=member_desktop&rcm=ACoAADt2Dj0BA4mJJurDKojEmAHa7Ngp2_lBLhY",
   },
 ];
 
