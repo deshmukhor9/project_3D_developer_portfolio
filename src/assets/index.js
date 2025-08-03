@@ -27,6 +27,7 @@ import mysql from "./tech/mysql.png";
 import nextjs from "./tech/nextjs.png";
 import python from "./tech/python.png";
 import powerbi from "./tech/powerbi.png";
+import linux from "./tech/linux.png";
 
 import meta from "./company/meta.png";
 import shopify from "./company/shopify.png";
@@ -72,6 +73,7 @@ export {
   reactnative,
   nextjs,
   python,powerbi,
+  linux,
   meta,
   shopify,
   starbucks,

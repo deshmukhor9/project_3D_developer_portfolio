@@ -79,39 +79,48 @@ const About = () => {
   className="text-base sm:text-lg md:text-xl lg:text-2xl leading-relaxed text-gray-300 mt-4
              opacity-0 animate-fadeIn w-full md:w-[80%] md:text-justify"
 >
-<br/>
+  <br />
   👋 <span className="font-semibold text-gray-200">Hi there! </span>  
-  I'm <span className="font-bold text-gray-300">Omkar Deshmukh</span>, a final-year Computer Science Engineering student from Maharashtra, India. Passionate about  
-  <span className="text-blue-400"> Full-Stack Development</span>,  
-  <span className="text-yellow-400"> AI</span>, and  
-  <span className="text-green-400"> Data Science</span>, I love building innovative applications that solve real-world problems. 🚀
+  I'm <span className="font-bold text-gray-300">Omkar Deshmukh</span>, a Graduate Computer Science Engineering student. I have hands-on experience in  
+  <span className="text-green-400"> data analysis</span>,  
+  <span className="text-blue-400"> web & mobile development</span>, and am currently upskilling in  
+  <span className="text-yellow-400"> Data Engineering</span>. I enjoy building scalable, tech-driven solutions that solve real-world problems. 🚀
+
+<br /><br />
+🎓 <span className="font-semibold text-gray-200">Education:</span>  
+<span className="text-gray-300"> B.Tech in Computer Science  '25</span>  
+<span className="font-medium text-gray-300"> | CGPA: </span> 
+<span className="font-bold text-gray-300">8.64  </span>
+
+<span className="font-medium text-gray-300"> | Honors AIML:</span>
+
+ <span className="font-bold text-gray-300"> A+   </span>
+<br /><br />
+
+📍 Maharashtra Institute of Technology, Chh. Sambhajinagar
+
 
   <br /><br />
-  🎓 <span className="font-semibold text-gray-200">Education: </span>  
-  <span className="text-gray-300">Bachelor’s Degree in Computer Science & Engineering (Ongoing)</span>  
-  📍 Maharashtra Institute of Technology, Aurangabad  
-  📊 <span className="font-medium text-gray-300">CGPA:</span> 8.6 | 🎓 Graduating: <span className="font-medium text-gray-300">June 2025</span>
-
-  <br /><br />
-  🚀 <span className="font-semibold text-gray-200">What I'm Currently Learning: </span>  
-  Integrating <span className="text-blue-400">Full-Stack Development</span> with  
-  <span className="text-yellow-400"> AI</span> to build intelligent applications.
+  🚀 <span className="font-semibold text-gray-200">Currently Exploring:</span>  
+  <span className="text-yellow-400"> Data Engineering</span>, AI integrations, and backend architecture using  
+  <span className="text-blue-400"> SQL</span> and  
+  <span className="text-purple-400"> Python</span>.
 
   <br /><br />
   ⚡ <span className="font-semibold text-gray-200">Fun Fact: </span>  
-  I love working on  
-  <span className="text-pink-400"> trading strategies</span>,  
-  <span className="text-purple-400"> AI-powered chat applications</span>, and  
-  <span className="text-green-400"> tech-driven solutions</span> that make life easier! 🚀
+  I love creating  
+  <span className="text-pink-400"> innovative tech solutions</span>
+  <span className="text-purple-400"> that solve real problems</span> and  
+  <span className="text-green-400"> make a positive impact. 🚀</span> 
 </motion.p>
 
 
     {/* Services Section */}
-    <div className='mt-10 flex flex-wrap gap-10'>
+    {/* <div className='mt-10 flex flex-wrap gap-10'>
       {services.map((service, index) => (
         <ServiceCard key={service.title} index={index} {...service} />
       ))}
-    </div>
+    </div> */}
   </>
   );
 };

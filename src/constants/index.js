@@ -30,6 +30,7 @@ import {
   mysql,
   nextjs,
   powerbi,
+  linux,
   python,
   cipherchat,
   aishort,
@@ -73,42 +74,17 @@ const services = [
 
 const technologies = [
   {
-    name: "HTML 5",
-    icon: html,
-  },
-  {
-    name: "CSS 3",
-    icon: css,
-  },
-  {
-    name: "JavaScript",
-    icon: javascript,
-  },
-  {
-    name: "TypeScript",
-    icon: typescript,
-  },
-  {
-    name: "React JS",
-    icon: reactjs,
-  },
-  {
-    name: "Next JS",
-    icon: nextjs,
-  },
-  {
-    name: "Tailwind CSS",
-    icon: tailwind,
-  },
-  {
-    name: "Node JS",
-    icon: nodejs,
-  },
-  {
     name: "MySQL",
     icon: mysql,
   },
-
+    {
+    name: "Python",
+    icon: python,
+  },
+    {
+    name: "Linux",
+    icon: linux,
+  },
   {
     name: "Git",
     icon: git,
@@ -124,11 +100,8 @@ const technologies = [
   {
     name: "Power BI",
     icon: powerbi,
-  },
-  {
-    name: "Python",
-    icon: python,
-  },
+  }
+
 ];
 
 const experiences = [
@@ -169,11 +142,11 @@ const experiences = [
     company_name: "Stellar MoldTech",
     icon: stellar,
     iconBg: "white",
-    date: "Jan 2025 - Present",
+    date: "Jan 2025 - May 2025",
     points: [
-      "Conducting exploratory data analysis (EDA) and deriving business insights from company data.",
-      "Developing machine learning models to optimize business processes. Working with Python, SQL, and Power BI for data visualization and reporting.",
-      "Throughout this internship, I am working with technologies like Google Firebase, BigQuery, Google Looker Studio, Google Sheets, and Python (Colab) to develop a data-driven solution for the company.",
+      "Conducted exploratory data analysis (EDA) and extracted key business insights from company datasets.",
+      "Developed machine learning models to optimize business processes.",
+      "Worked with Python (Colab), Google Sheets, BigQuery, Firebase, and Looker Studio to build a data-driven solution for the organization."
     ],
   },
 ];
