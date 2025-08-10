@@ -23,6 +23,7 @@ const Hero = () => {
     </h1>
     <p className={`${styles.heroSubText} mt-4 text-white-100`}>
       Graduate Computer Science Engineer.<br className='sm:block hidden' />
+      A Red Hat Certified (RHCSA).<br className='sm:block hidden' />
       Passionate about data, code, and building <br className='sm:block hidden' /> smart solutions.<br className='sm:block hidden' />
 
     </p>

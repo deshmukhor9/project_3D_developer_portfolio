@@ -63,8 +63,8 @@ const About = () => {
   {/* View Resume Button - Positioned in Front */}
   <button 
     onClick={() => navigate("/resume")} 
-    className="bg-[#915eff] text-white text-xl px-8 py-3 rounded-lg shadow-md 
-               hover:bg-[#09dbf8] hover:text-black transition-all 
+    className="bg-gray-300 text-black text-xl px-8 py-3 rounded-lg shadow-md 
+               hover:bg-gray-500 hover:text-white transition-all 
                mt-4 md:mt-0 md:mb-4 md:ml-10 md:w-auto"
   >
     View Resume

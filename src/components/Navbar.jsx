@@ -1,16 +1,15 @@
 import React, { useEffect, useState } from "react";
-import { Link, useLocation } from "react-router-dom"; // Import useLocation
+import { Link, useLocation, useNavigate } from "react-router-dom"; 
 import { styles } from "../styles";
 import { navLinks } from "../constants";
 import { menu, close } from "../assets";
-// import { logo} from "/logo";
-
 
 const Navbar = () => {
   const [active, setActive] = useState("");
   const [toggle, setToggle] = useState(false);
   const [scrolled, setScrolled] = useState(false);
-  const location = useLocation(); // Get current route
+  const location = useLocation();
+  const navigate = useNavigate();
 
   useEffect(() => {
     const handleScroll = () => {
@@ -28,6 +27,8 @@ const Navbar = () => {
       }`}
     >
       <div className="w-full flex justify-between items-center max-w-7xl mx-auto">
+        
+        {/* Logo */}
         <Link
           to="/"
           className="flex items-center gap-2"
@@ -42,11 +43,22 @@ const Navbar = () => {
           </p>
         </Link>
 
-        {/* Hide the navigation links if on /resume */}
-        {location.pathname !== "/resume" && (
-          <>
-            {/* Desktop Navigation */}
-            <ul className="list-none hidden sm:flex flex-row gap-10">
+        {/* Desktop Navigation */}
+        <div className="hidden sm:flex items-center gap-10">
+          {/* ✅ View Resume Button (hidden on /resume) */}
+          {location.pathname !== "/resume" && (
+            <button
+              onClick={() => navigate("/resume")}
+              className="bg-gray-300 text-black text-lg px-5 py-2 rounded-lg shadow-md 
+                         hover:bg-gray-500 hover:text-white transition-all duration-300"
+            >
+              View Resume
+            </button>
+          )}
+
+          {/* Nav Links */}
+          {location.pathname !== "/resume" && (
+            <ul className="list-none flex flex-row gap-10">
               {navLinks.map((nav) => (
                 <li
                   key={nav.id}
@@ -59,41 +71,60 @@ const Navbar = () => {
                 </li>
               ))}
             </ul>
+          )}
+        </div>
 
-            {/* Mobile Navigation Toggle Button */}
-            <div className="sm:hidden flex flex-1 justify-end items-center">
-              <img
-                src={toggle ? close : menu}
-                alt="menu"
-                className="w-[28px] h-[28px] object-contain"
-                onClick={() => setToggle(!toggle)}
-              />
-            </div>
+        {/* Mobile Menu Toggle Button */}
+        <div className="sm:hidden flex flex-1 justify-end items-center">
+          <img
+            src={toggle ? close : menu}
+            alt="menu"
+            className="w-[28px] h-[28px] object-contain"
+            onClick={() => setToggle(!toggle)}
+          />
+        </div>
 
-            {/* Mobile Navigation Links */}
-            {toggle && (
-              <div
-                className="p-6 black-gradient absolute top-20 right-0 mx-4 my-2 min-w-[140px] z-10 rounded-xl"
-              >
-                <ul className="list-none flex justify-end items-start flex-1 flex-col gap-4">
-                  {navLinks.map((nav) => (
-                    <li
-                      key={nav.id}
-                      className={`font-poppins font-medium cursor-pointer text-[16px] ${
-                        active === nav.title ? "text-white" : "text-secondary"
-                      }`}
-                      onClick={() => {
-                        setToggle(false);
-                        setActive(nav.title);
-                      }}
-                    >
-                      <a href={`#${nav.id}`}>{nav.title}</a>
-                    </li>
-                  ))}
-                </ul>
-              </div>
-            )}
-          </>
+        {/* Mobile Navigation */}
+        {toggle && (
+          <div
+            className="p-6 black-gradient absolute top-20 right-0 mx-4 my-2 
+                       min-w-[160px] z-10 rounded-xl"
+          >
+            <ul className="list-none flex flex-col gap-4">
+              {/* ✅ Mobile View Resume Button */}
+              {location.pathname !== "/resume" && (
+                <li>
+                  <button
+                    onClick={() => {
+                      setToggle(false);
+                      navigate("/resume");
+                    }}
+                    className="bg-gray-300 text-black text-lg px-5 py-2 rounded-lg shadow-md 
+                               hover:bg-gray-500 hover:text-white transition-all duration-300 w-full text-left"
+                  >
+                    View Resume
+                  </button>
+                </li>
+              )}
+
+              {/* Nav Links */}
+              {location.pathname !== "/resume" &&
+                navLinks.map((nav) => (
+                  <li
+                    key={nav.id}
+                    className={`font-poppins font-medium cursor-pointer text-[16px] ${
+                      active === nav.title ? "text-white" : "text-secondary"
+                    }`}
+                    onClick={() => {
+                      setToggle(false);
+                      setActive(nav.title);
+                    }}
+                  >
+                    <a href={`#${nav.id}`}>{nav.title}</a>
+                  </li>
+                ))}
+            </ul>
+          </div>
         )}
       </div>
     </nav>
