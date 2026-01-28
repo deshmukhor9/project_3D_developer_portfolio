@@ -28,9 +28,20 @@ import {
   reactnative,
   firebase,
   mysql,
+  snowflake,
+
+  fabric_project,
+  sales_report,
+  
   nextjs,
   powerbi,
   linux,
+  spark,
+  adb,
+  adf,
+  fabric,
+  adls,
+  synapse,
   python,
   cipherchat,
   aishort,
@@ -85,6 +96,34 @@ const technologies = [
     name: "Linux",
     icon: linux,
   },
+      {
+    name: "Spark",
+    icon: spark,
+  },
+      {
+    name: "Databricks",
+    icon: adb,
+  },
+      {
+    name: "Azure Data Factory",
+    icon: adf,
+  },
+      {
+    name: "Fabric",
+    icon: fabric,
+  },
+      {
+    name: "Azure Data Lake",
+    icon: adls,
+  },
+      {
+    name: "Synapse",
+    icon: synapse,
+  },
+        {
+    name: "Snowflake",
+    icon: snowflake,
+  },
   {
     name: "Git",
     icon: git,
@@ -93,10 +132,7 @@ const technologies = [
     name: "Figma",
     icon: figma,
   },
-  {
-    name: "Firebase",
-    icon: firebase,
-  },
+
   {
     name: "Power BI",
     icon: powerbi,
@@ -117,26 +153,7 @@ const experiences = [
       "Tested and debugged web applications, leading to a 15% increase in website responsiveness. ",
     ],
   },
-  {
-    title: "Data Analyst Intern",
-    company_name: "Kulturehire",
-    icon: kulturehire,
-    iconBg: "white",
-    date: "Aug 2024 - Sep 2024",
-    points: [
-      "Conducted data cleaning, analysis, and visualization using SQL and EXCEL to deliver actionable insights.",
-    ],
-  },
-  {
-    title: "Business Analyst Intern",
-    company_name: "Kulturehire",
-    icon: kulturehire,
-    iconBg: "white",
-    date: "Oct 2024 - Nov 2024",
-    points: [
-      "Collaborated with teams to optimize processes and prepared reports to support strategic planning.",
-    ],
-  },
+ 
   {
     title: "Data Science Intern",
     company_name: "Stellar MoldTech",
@@ -179,6 +196,31 @@ const testimonials = [
 ];
 
 const projects = [
+   {
+    name: "Metadata-Driven Data Pipeline (Fabric)",
+    description:
+      "Developed a production-grade, metadata-driven data pipeline using Microsoft Fabric, PySpark, and SQL. Implemented Medallion Lakehouse architecture with data quality validation and SCD Type-1 logic. Focused on scalable ingestion, automated orchestration for reliable business insights.",
+    tags: [
+      {
+        name: "fabric",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "pyspark",
+        color: "green-text-gradient",
+      },
+      {
+        name: "spark sql",
+        color: "pink-text-gradient",
+      },
+            {
+        name: "ci/cd",
+        color: "blue-text-gradient",
+      },
+    ],
+    image: fabric_project,
+    source_code_link: "https://github.com/deshmukhor9/DE_Fabric_Project",
+  },
   {
     name: "Cipher Chat",
     description:
@@ -268,6 +310,27 @@ const projects = [
     ],
     image: edutrack,
     source_code_link: "https://www.linkedin.com/posts/omkar-deshmukh-67911223a_reactjs-webdevelopment-edtech-activity-7319609393027629056-ufQ3?utm_source=share&utm_medium=member_desktop&rcm=ACoAADt2Dj0BA4mJJurDKojEmAHa7Ngp2_lBLhY",
+  },
+    {
+    name: "Sales Analysis Report (Power BI)",
+    description:
+      "This project is an interactive Sales Analysis Dashboard built in Power BI to analyze sales performance across countries, categories, segments, and years. It provides business-ready insights using KPI cards, slicers, and visual analytics.",
+    tags: [
+      {
+        name: "data visualisation",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "power bi",
+        color: "green-text-gradient",
+      },
+      {
+        name: "dax",
+        color: "pink-text-gradient",
+      },
+    ],
+    image: sales_report,
+    source_code_link: "https://github.com/deshmukhor9/PowerBI_sales_analysis",
   },
 ];
 

@@ -28,6 +28,13 @@ import nextjs from "./tech/nextjs.png";
 import python from "./tech/python.png";
 import powerbi from "./tech/powerbi.png";
 import linux from "./tech/linux.png";
+import spark from "./tech/spark.png";
+import synapse from "./tech/synapse.png";
+import fabric from "./tech/fabric.png";
+import adls from "./tech/adls.png";
+import adf from "./tech/adf.png";
+import adb from "./tech/adb.png";
+import snowflake from "./tech/snowflake.png";
 
 import meta from "./company/meta.png";
 import shopify from "./company/shopify.png";
@@ -43,6 +50,8 @@ import cipherchat from "./cipherchat.png";
 import rentex from "./rentex.png";
 import aishort from "./aishort.png";
 import edutrack from "./edu-track.png";
+import fabric_project from "./fabric_project.png";
+import sales_report from "./sales_report.png";
 
 
 export {
@@ -74,6 +83,14 @@ export {
   nextjs,
   python,powerbi,
   linux,
+  adb,
+  adf,
+  adls,
+  fabric,
+  spark,
+  synapse,
+  snowflake,
+
   meta,
   shopify,
   starbucks,
@@ -86,5 +103,8 @@ export {
   cipherchat,
   rentex,
   aishort,
-  edutrack
+  edutrack,
+  fabric_project,
+  sales_report
+
 };

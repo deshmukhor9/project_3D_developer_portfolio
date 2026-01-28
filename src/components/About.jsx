@@ -71,9 +71,7 @@ const About = () => {
   </button>
 </motion.div>
 
-  
-{/* Paragraph Content */}
-{/* Paragraph Content */}
+  {/* Paragraph Content */}
 <motion.p
   variants={fadeIn("", "", 0.1, 1)}
   className="text-base sm:text-lg md:text-xl lg:text-2xl leading-relaxed text-gray-300 mt-4
@@ -81,37 +79,40 @@ const About = () => {
 >
   <br />
   👋 <span className="font-semibold text-gray-200">Hi there! </span>  
-  I'm <span className="font-bold text-gray-300">Omkar Deshmukh</span>, a Graduate Computer Science Engineering student. I have hands-on experience in  
-  <span className="text-green-400"> data analysis</span>,  
-  <span className="text-blue-400"> web & mobile development</span>, and am currently upskilling in  
-  <span className="text-yellow-400"> Data Engineering</span>. I enjoy building scalable, tech-driven solutions that solve real-world problems. 🚀
-
-<br /><br />
-🎓 <span className="font-semibold text-gray-200">Education:</span>  
-<span className="text-gray-300"> B.Tech in Computer Science  '25</span>  
-<span className="font-medium text-gray-300"> | CGPA: </span> 
-<span className="font-bold text-gray-300">8.64  </span>
-
-<span className="font-medium text-gray-300"> | Honors AIML:</span>
-
- <span className="font-bold text-gray-300"> A+   </span>
-<br /><br />
-
-📍 Maharashtra Institute of Technology, Chh. Sambhajinagar
-
+  I'm <span className="font-bold text-gray-300">Omkar Deshmukh</span>, a 
+  <span className="text-yellow-400"> Data Engineering graduate</span> with hands-on experience in designing 
+  <span className="text-green-400"> production-grade, metadata-driven data pipelines</span> using 
+  <span className="text-blue-400"> Microsoft Fabric</span>. I have a strong foundation in  
+  <span className="text-purple-400"> ETL/ELT workflows</span>,  
+  <span className="text-blue-400"> Lakehouse architecture</span>, and 
+  <span className="text-green-400"> data warehousing</span>. I enjoy building scalable, governed data platforms that support real-world business decisions. 🚀
 
   <br /><br />
-  🚀 <span className="font-semibold text-gray-200">Currently Exploring:</span>  
-  <span className="text-yellow-400"> Data Engineering</span>, AI integrations, and backend architecture using  
-  <span className="text-blue-400"> SQL</span> and  
-  <span className="text-purple-400"> Python</span>.
+  🎓 <span className="font-semibold text-gray-200">Education:</span>  
+  <span className="text-gray-300"> B.Tech in Computer Science Engineering ’25</span>  
+  <span className="font-medium text-gray-300"> | CGPA: </span> 
+  <span className="font-bold text-gray-300">8.64</span>
+  <span className="font-medium text-gray-300"> | Honors AIML: </span>
+  <span className="font-bold text-gray-300">A+</span>
+
+  <br /><br />
+  📍 <span className="text-gray-300">Maharashtra Institute of Technology, Chh. Sambhajinagar</span>
+
+  <br /><br />
+  🚀 <span className="font-semibold text-gray-200">Core Expertise:</span>  
+  <span className="text-yellow-400"> Data Engineering</span>,  
+  <span className="text-blue-400"> PySpark</span>,  
+  <span className="text-purple-400"> SQL</span>,  
+  <span className="text-green-400"> Azure Data Services</span>,  
+  <span className="text-pink-400"> CI/CD pipelines</span>, and  
+  <span className="text-blue-400"> Power BI</span>.
 
   <br /><br />
   ⚡ <span className="font-semibold text-gray-200">Fun Fact: </span>  
-  I love creating  
-  <span className="text-pink-400"> innovative tech solutions</span>
-  <span className="text-purple-400"> that solve real problems</span> and  
-  <span className="text-green-400"> make a positive impact. 🚀</span> 
+  I love transforming  
+  <span className="text-pink-400"> raw data</span> into  
+  <span className="text-purple-400"> clean, reliable datasets</span> and building  
+  <span className="text-green-400"> scalable systems that make a real impact 🚀</span>
 </motion.p>
 
 

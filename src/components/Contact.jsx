@@ -57,7 +57,13 @@ const Contact = () => {
         },
         (error) => {
           setLoading(false);
-          console.error(error);
+          (error) => {
+  setLoading(false);
+  console.log("EmailJS Error:", error);
+  console.log("EmailJS Error text:", error.text);
+  alert(`Error: ${error.text}`);
+}
+;
 
           alert("Ahh, something went wrong. Please try again.");
         }
