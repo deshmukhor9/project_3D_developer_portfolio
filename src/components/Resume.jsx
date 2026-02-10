@@ -4,7 +4,8 @@ const Resume = () => {
   return (
     <div className="flex justify-center items-center h-screen  pt-10">
       <iframe
-        src="https://drive.google.com/file/d/15z-jEYNXMbTBfpP0wI4glNm2hlhMVpAY/preview"
+        src="https://drive.google.com/file/d/1j2Lop77L_1i7ZpF50mElmoMkVZLGP4RK/preview"
+        
         width="80%"
         height="90%"
         
