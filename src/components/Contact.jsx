@@ -31,19 +31,23 @@ const Contact = () => {
     e.preventDefault();
     setLoading(true);
 
-    emailjs
-      .send(
-        import.meta.env.VITE_EMAILJS_SERVICE_ID,
-        import.meta.env.VITE_EMAILJS_TEMPLATE_ID,
-        {
-          from_name: form.name,
-          to_name: "Omkar Deshmukh",
-          from_email: form.email,
-          to_email: "deshmukhr9@gmail.com",
-          message: form.message,
-        },
-        import.meta.env.VITE_EMAILJS_PUBLIC_KEY
-      )
+emailjs.send(
+  import.meta.env.VITE_EMAILJS_SERVICE_ID,
+  import.meta.env.VITE_EMAILJS_TEMPLATE_ID,
+  {
+    from_name: form.name,
+    from_email: form.email,
+    message: `
+Sender Name: ${form.name}
+Sender Email: ${form.email}
+
+Message:
+${form.message}
+    `,
+  },
+  import.meta.env.VITE_EMAILJS_PUBLIC_KEY
+)
+
       .then(
         () => {
           setLoading(false);

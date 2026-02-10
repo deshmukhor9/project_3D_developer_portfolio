@@ -19,7 +19,7 @@ const ProjectCard = ({ name, description, tags, image, source_code_link }) => {
         />
 
         {/* LinkedIn Icon */}
-        <div className="absolute top-3 right-3">
+        {/* <div className="absolute top-3 right-3">
           <div
             onClick={(e) => {
               e.stopPropagation();
@@ -33,7 +33,7 @@ const ProjectCard = ({ name, description, tags, image, source_code_link }) => {
               className="w-8 h-8 object-contain"
             />
           </div>
-        </div>
+        </div> */}
       </div>
 
       {/* Content */}
